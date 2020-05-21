@@ -10,7 +10,7 @@ class Kubetap < Formula
   depends_on "go" => :build
 
   def install
-    system "go", "build", "-o", "./kubectl-tap", "-ldflags='-s -w'", "./cmd/kubectl-tap"
+    system "go", "build", "-o", "./kubectl-tap", "-ldflags=-s", "-ldflags=-w", "./cmd/kubectl-tap"
     bin.install "./kubectl-tap"
   end
 
