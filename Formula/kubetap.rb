@@ -1,8 +1,8 @@
 class Kubetap < Formula
   desc "Proxy Kubernetes Services with ease"
   homepage "https://github.com/soluble-ai/kubetap"
-  url "https://github.com/soluble-ai/kubetap/archive/v0.1.1.tar.gz"
-  sha256 "278561b39cb440d8cb26353aad7494f67049f2bbdf4d41dc43bb3917556b76e7"
+  url "https://github.com/soluble-ai/kubetap/archive/v0.1.2.tar.gz"
+  sha256 "c1eb920c0c74dff72ec2cfded9286cd4dcf6887a0b292ab9c52aa3b8a0d00cdc"
   head "https://github.com/soluble-ai/kubetap.git"
   
   bottle :unneeded
