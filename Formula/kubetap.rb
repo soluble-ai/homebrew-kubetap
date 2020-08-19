@@ -2,24 +2,24 @@
 class Kubetap < Formula
   desc "Kubetap is a kubectl plugin to interactively proxy Kubernetes Services with ease"
   homepage "https://github.com/soluble-ai/kubetap"
-  version "0.1.3"
+  version "0.1.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.3/kubetap_v0.1.3_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
-    sha256 "48e803ef059af673bd94e9cf0f13b7d47b64e639851d1451113f699ced3465a2"
+    url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.4/kubetap_v0.1.4_Darwin_x86_64.tar.gz", :using => CurlDownloadStrategy
+    sha256 "d6e3f1ed09794e25232f505e5bdb7c6df3024534a02a72eb5c4c113c041f6672"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.3/kubetap_v0.1.3_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
-      sha256 "e95335aebce88c8bf453cbccb7136da009ae0c787cd1bb81bbb1158decd48aad"
+      url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.4/kubetap_v0.1.4_Linux_x86_64.tar.gz", :using => CurlDownloadStrategy
+      sha256 "c41c8fcc5fe9eb59747478d8d33a28dd41f6dcb73cacd28d4217c4ed32eb72c1"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.3/kubetap_v0.1.3_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
-        sha256 "1b6d6a4bb900c594c0abc0af4deb45f3a88f4f7fd454021276d1e4a70b155d62"
+        url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.4/kubetap_v0.1.4_Linux_arm64.tar.gz", :using => CurlDownloadStrategy
+        sha256 "3070aa3f9fa6c28baf1adcb79c52d6bf50ba009b0b897b268f8a78feb2e8fe02"
       else
-        url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.3/kubetap_v0.1.3_Linux_armv6.tar.gz", :using => CurlDownloadStrategy
-        sha256 "2fc48c8113bfc2b128ef688dd33c6f75dd50a87c4ce25b79de73de374b33e5e4"
+        url "https://github.com/soluble-ai/kubetap/releases/download/v0.1.4/kubetap_v0.1.4_Linux_armv6.tar.gz", :using => CurlDownloadStrategy
+        sha256 "80ae8625984f81407b0e368112529542e159aa811ae071565198d4ef3d6197d6"
       end
     end
   end
